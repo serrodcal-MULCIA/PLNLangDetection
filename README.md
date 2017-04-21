@@ -37,7 +37,7 @@ Visual scheme:
 
 At first, we have to install all packages:
 
-`$ pip install -r requirements.txt`
+`$ pip3 install -r requirements.txt`
 
 And, we need to download nltk files:
 
