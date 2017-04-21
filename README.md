@@ -29,6 +29,10 @@ Finally, system must calculate percentage of hits and erros. And, it is importan
 
 This project has target of supporting following 10 lenguages: english, spanish, french, italian, protuguese, german, greek, danish, netherlander and finnish. But, it supports other languages.
 
+Visual scheme:
+
+![principal](http://www.nltk.org/images/supervised-classification.png)
+
 ## Instalation
 
 At first, we have to install all packages:
