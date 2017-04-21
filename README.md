@@ -31,8 +31,33 @@ This project has target of supporting following 10 lenguages: english, spanish, 
 
 ## Instalation
 
-...
+At first, we have to install all packages:
+
+`$ pip install -r requirements.txt`
+
+And, we need to download nltk files:
+
+    $ python
+    >>> import nltk()
+    >>> nltk.download()
+
+Note that we must have installed Pip, Pip3, Python and Python3.
 
 ## How to execute
 
-...
+Previously, we need to have Europarl files in ./europarl_raw. The link is in top of train.py as comment.
+
+Therefore, we need to download wikipedia articles to classification. For that:
+
+`$ python wikipedia_downloader_corpus.py`
+
+Wikipedia script is described in following [link]().
+
+Now, we are going to run train.py using europarl_raw/ as given below:
+
+`$ python3 train.py europarl_raw`
+
+Finally, we have to run classify.py script to evaluate. Needed model.pickle in same directory:
+
+`$ python3 classify.py model.pickle ./wikipedia/`
+
