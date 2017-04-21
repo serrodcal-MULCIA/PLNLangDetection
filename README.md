@@ -64,4 +64,4 @@ Finally, we have to run classify.py script to evaluate. Needed model.pickle in s
 Example of output:
 
     $ python3 classify.py model.pickle ./wikipedia/greek/European_Union.el
-    >>> ./wikipedia/greek/European_Union.el	*greek*
+    >>> ./wikipedia/greek/European_Union.el	greek
