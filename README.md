@@ -70,3 +70,18 @@ Example of output (_classify.py to run with a sentence):
     $ python3 _classify.py model.pickle "This is an example."
     >>> ./wikipedia/greek/European_Union.el	english
 
+## Europarl
+
+Here are some statistics for the full Europarl data:
+
+* Danish    :  37,448,363 words
+* Dutch     :  39,716,639 words
+* English   :  39,525,473 words
+* Finnish   :  26,371,785 words
+* French    :  43,185,127 words
+* German    :  37,544,028 words
+* Greek     :   3,377,416 words
+* Italian   :  38,706,361 words
+* Portuguese:  40,186,811 words
+* Spanish   :  41,264,142 words
+* Swedish   :  33,314,195 words
