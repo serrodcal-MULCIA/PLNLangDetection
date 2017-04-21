@@ -51,7 +51,7 @@ Therefore, we need to download wikipedia articles to classification. For that:
 
 `$ python wikipedia_downloader_corpus.py`
 
-Wikipedia script is described in following [link]().
+Wikipedia script is described in following [link](https://github.com/serrodcal/WikiCorpus/blob/master/README.md).
 
 Now, we are going to run train.py using europarl_raw/ as given below:
 
