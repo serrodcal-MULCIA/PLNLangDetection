@@ -65,10 +65,10 @@ Finally, we have to run classify.py script to evaluate. Needed model.pickle in s
 
 `$ python3 classify.py model.pickle ./wikipedia/`
 
-Example of output (_classify.py to run with a sentence):
+Example of output (_classify.py for running with a sentence):
 
     $ python3 _classify.py model.pickle "This is an example."
-    >>> ./wikipedia/greek/European_Union.el	english
+    >>> This is an example.	english
 
 ## Europarl
 
