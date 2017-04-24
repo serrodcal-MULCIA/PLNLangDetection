@@ -61,7 +61,7 @@ Now, we are going to run train.py using europarl_raw/ as given below:
 
 `$ python3 train.py languages.txt europarl_raw`
 
-Finally, we have to run classify.py script to evaluate. Needed model.pickle in same directory:
+Finally, we have to run classify.py script to evaluate. Needed [model.pickle](https://mega.nz/#!vk4hQRQI!KVaxZlRXKpyQ_8dBnvX0yjAvM_-jp9mclF-LJvQYzk0) in same directory:
 
 `$ python3 classify.py model.pickle languages.txt ./wikipedia/`
 
