@@ -1,13 +1,13 @@
 {
-	"da" : { "language":"danish", "topics":[]},
-	"nl": { "language":"dutch", "topics":[]},
-	"en": { "language":"english", "topics":["Formula_One","Myocardial_infarction","Lionel_Messi","NASA","Spain","European_Union"]},
-	"fi": { "language":"finnish", "topics":[]},
-	"fr": { "language":"french", "topics":[]},
-	"de": { "language":"german", "topics":[]},
-	"el": { "language":"greek", "topics":[]},
-	"it": { "language":"italian", "topics":[]},
-	"pt": { "language":"portuguese", "topics":[]},
-	"es": { "language":"spanish", "topics":[]},
-	"sv": { "language":"swedish", "topics":[]}
+	"da" : { "language":"danish", "topics":["Formel_1","Akut_myokardieinfarkt","Lionel_Messi","NASA","Spanien","Den_Europæiske_Union","Diego_Velázquez"]},
+	"nl": { "language":"dutch", "topics":["Formule_1","Hartinfarct","Lionel_Messi","National_Aeronautics_and_Space_Administration","Spanje","Europese_Unie","William_Shakespeare"]},
+	"en": { "language":"english", "topics":["Formula_One","Myocardial_infarction","Lionel_Messi","NASA","Spain","European_Union","Diego_Velázquez"]},
+	"fi": { "language":"finnish", "topics":["Formula_1","Sydäninfarkti","Lionel_Messi","Nasa","Espanja","Euroopan_unioni","Diego_Velázquez"]},
+	"fr": { "language":"french", "topics":["Formule_1","Infarctus_du_myocarde","Lionel_Messi","National_Aeronautics_and_Space_Administration","Espagne","Union_européenne","Diego_Vélasquez"]},
+	"de": { "language":"german", "topics":["Formel_1","Myokardinfarkt","Lionel_Messi","NASA","Spanien","Europäische_Union","Diego_Velázquez"]},
+	"el": { "language":"greek", "topics":["Φόρμουλα_1","Έμφραγμα_του_μυοκαρδίου","Λιονέλ_Μέσι","NASA","Ισπανία","Ευρωπαϊκή_Ένωση","Ντιέγο_Βελάθκεθ"]},
+	"it": { "language":"italian", "topics":["Formula_1","Infarto_miocardico_acuto","Lionel_Messi","NASA","Spagna","Unione_europea","Diego_Velázquez"]},
+	"pt": { "language":"portuguese", "topics":["Fórmula_1","Infarto_agudo_do_miocárdio","Lionel_Messi","NASA","Espanha","União_Europeia","Diego_Velázquez"]},
+	"es": { "language":"spanish", "topics":["Fórmula_1","Infarto_agudo_de_miocardio","Lionel_Messi","NASA","España","Unión_Europea","Diego_Velázquez"]},
+	"sv": { "language":"swedish", "topics":["Formel_1","Hjärtinfarkt","Lionel_Messi","NASA","Spanien","Europeiska_unionen","Diego_Velázquez"]}
 }
