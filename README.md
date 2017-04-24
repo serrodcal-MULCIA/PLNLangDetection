@@ -2,6 +2,8 @@
 
 Second work proposed for the subject of Natural Language Processing that consists of making a system that detects the languages of the text given.
 
+[Wiki in spanish](https://github.com/MULCIA/PLNLangDetection/wiki)
+
 ## Requirements
 
 System must support at least 10 languages. Languages must have differences between them. It is advisable to use the corpus [Europarl](http://www.statmt.org/europarl/). As minimum system must support Spanish, Italian, French, Portuguese and English.
