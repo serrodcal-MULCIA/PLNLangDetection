@@ -14,7 +14,6 @@ from tqdm import tqdm
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 
-#from nltk.corpus import brown
 from nltk.metrics import ConfusionMatrix
 
 def get_directories(data_path, languages):
