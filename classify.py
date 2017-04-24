@@ -111,6 +111,14 @@ if __name__ == "__main__":
     predicted = classify(to_predict)
     
     #TODO: Hay que hacer tags con los datos, los de entrada y los que salen de la red bayesiana.
+    """>>> def tag_list(tagged_sents):
+    ...     return [tag for sent in tagged_sents for (word, tag) in sent]
+    >>> def apply_tagger(tagger, corpus):
+    ...     return [tagger.tag(nltk.tag.untag(sent)) for sent in corpus]
+    >>> gold = tag_list(brown.tagged_sents(categories='editorial'))
+    >>> test = tag_list(apply_tagger(t2, brown.tagged_sents(categories='editorial')))
+    >>> cm = nltk.ConfusionMatrix(gold, test)
+    >>> print(cm.pretty_format(sort_by_count=True, show_percents=True, truncate=9))"""
 
     confusion_matrix(predicted, test)
 
