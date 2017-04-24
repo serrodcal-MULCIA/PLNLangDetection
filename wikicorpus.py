@@ -15,11 +15,10 @@ def get_json(filename):
 def save(path, filename, content, iso):
     filename = './wikipedia/%s/%s.%s'%(path,filename,iso)
     os.makedirs(os.path.dirname(filename), exist_ok=True)
-    file = open(filename, "w+")
     content_cleaned = re.compile('\w+').findall(content)
     content_encoded = str(' '.join(content_cleaned).encode('utf-8'))
-    file.write(content_encoded)
-    file.close
+    with open(filename, "w+") as f:
+        f.write(content_encoded)
 
 if __name__ == "__main__":
 
