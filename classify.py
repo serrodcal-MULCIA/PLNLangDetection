@@ -14,6 +14,7 @@ from tqdm import tqdm
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 
+#from nltk.corpus import brown
 from nltk.metrics import ConfusionMatrix
 
 def get_directories(data_path, languages):
@@ -33,14 +34,6 @@ def find_files(data_path, languages_for_training):
         files[lang] = [f for f in listdir('%s/%s/'%(data_path,lang)) if not f.startswith('.')]
         print("%s : %i ficheros" %(lang,len(files[lang])))
     return files
-
-"""def get_words(text):
-    with open(text) as f:
-        words = re.compile('\w+').findall(f.read())
-    return ' '.join(words)"""
-
-"""def load_inputs(inputs):
-    return map(get_words, inputs)"""
 
 def get_chunks(words):
     sentences = list()
@@ -76,22 +69,17 @@ def parse_files(data_path):
                     y_set.append(lang)
     return X_set,y_set
 
-"""def pretty_show(data, predictions):
-    for dt, pr in zip(data,predictions):
-        print("%s\t%s"%(dt,pr))"""
-
 def classify(to_predict):
-    """
-    Returns the classification of the given inputs
-    """
     with open(args.model, 'rb') as f:
         model = pickle.load(f)
     return model.predict(to_predict)
-    #pretty_show(args.dataset, predicted)
+
+def to_str(array):
+    return [str(item) for item in array]
 
 def confusion_matrix(predicted, test):
     cm = nltk.ConfusionMatrix(predicted, test)
-    print(cm.pretty_format(sort_by_count=True, show_percents=True, truncate=9))
+    print(cm.pretty_format(sort_by_count=True, show_percents=True, truncate=11))
 
 if __name__ == "__main__":
 
@@ -109,16 +97,7 @@ if __name__ == "__main__":
     to_predict,test = parse_files(args.dataset)
 
     predicted = classify(to_predict)
-    
-    #TODO: Hay que hacer tags con los datos, los de entrada y los que salen de la red bayesiana.
-    """>>> def tag_list(tagged_sents):
-    ...     return [tag for sent in tagged_sents for (word, tag) in sent]
-    >>> def apply_tagger(tagger, corpus):
-    ...     return [tagger.tag(nltk.tag.untag(sent)) for sent in corpus]
-    >>> gold = tag_list(brown.tagged_sents(categories='editorial'))
-    >>> test = tag_list(apply_tagger(t2, brown.tagged_sents(categories='editorial')))
-    >>> cm = nltk.ConfusionMatrix(gold, test)
-    >>> print(cm.pretty_format(sort_by_count=True, show_percents=True, truncate=9))"""
 
-    confusion_matrix(predicted, test)
+    predicted_str = to_str(predicted)
 
+    confusion_matrix(predicted_str, test)
