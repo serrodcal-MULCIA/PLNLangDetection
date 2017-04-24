@@ -53,17 +53,17 @@ Previously, we need to have Europarl files in ./europarl_raw. The link is in top
 
 Therefore, we need to download wikipedia articles to classification. For that:
 
-`$ python wikipedia_downloader_corpus.py`
+`$ python3 wikicorpus.py topics.json`
 
 Wikipedia script is described in following [link](https://github.com/serrodcal/WikiCorpus/blob/master/README.md).
 
 Now, we are going to run train.py using europarl_raw/ as given below:
 
-`$ python3 train.py europarl_raw`
+`$ python3 train.py languages.txt europarl_raw`
 
 Finally, we have to run classify.py script to evaluate. Needed model.pickle in same directory:
 
-`$ python3 classify.py model.pickle ./wikipedia/`
+`$ python3 classify.py model.pickle languages.txt ./wikipedia/`
 
 Example of output (_classify.py for running with a sentence):
 
