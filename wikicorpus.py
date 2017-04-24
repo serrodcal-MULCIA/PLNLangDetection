@@ -1,9 +1,11 @@
+import os
+import re
 import json
 import argparse
 import wikipedia
 from tqdm import tqdm
 
-# ~$ python wikicorpus.py topics.json
+# ~$ python3 wikicorpus.py topics.json
 
 def get_json(filename):
     file = ' '.join(list(open(filename,'r')))
@@ -11,8 +13,12 @@ def get_json(filename):
     return dict(json_file)
 
 def save(path, filename, content, iso):
-    file = open('./wikipedia/%s/%s.%s'%(path,filename,iso), "w+")
-    file.write(content)
+    filename = './wikipedia/%s/%s.%s'%(path,filename,iso)
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    file = open(filename, "w+")
+    content_cleaned = re.compile('\w+').findall(content)
+    content_encoded = str(' '.join(content_cleaned).encode('utf-8'))
+    file.write(content_encoded)
     file.close
 
 if __name__ == "__main__":
