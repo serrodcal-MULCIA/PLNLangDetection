@@ -1,13 +1,13 @@
 {
-	"da" : [],
-	"nl": [],
-	"en": ["Formula_One","Myocardial_infarction","Lionel_Messi","NASA","Spain","European_Union"],
-	"fi": [],
-	"fr": [],
-	"de": [],
-	"el": [],
-	"it": [],
-	"pt": [],
-	"es": [],
-	"sv": []
+	"da" : { "language":"danish", "topics":[]},
+	"nl": { "language":"dutch", "topics":[]},
+	"en": { "language":"english", "topics":["Formula_One","Myocardial_infarction","Lionel_Messi","NASA","Spain","European_Union"]},
+	"fi": { "language":"finnish", "topics":[]},
+	"fr": { "language":"french", "topics":[]},
+	"de": { "language":"german", "topics":[]},
+	"el": { "language":"greek", "topics":[]},
+	"it": { "language":"italian", "topics":[]},
+	"pt": { "language":"portuguese", "topics":[]},
+	"es": { "language":"spanish", "topics":[]},
+	"sv": { "language":"swedish", "topics":[]}
 }
