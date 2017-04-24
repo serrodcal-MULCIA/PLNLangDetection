@@ -3,3 +3,4 @@ numpy==1.12.1
 scikit-learn==0.18.1
 tqdm==4.11.2
 scipy
+wikipedia==1.4.0
