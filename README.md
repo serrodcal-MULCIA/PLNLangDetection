@@ -25,6 +25,7 @@ Finally, system must calculate percentage of hits and erros. And, it is importan
 * [numpy](http://www.numpy.org/) 
 * [scipy](https://www.scipy.org/)
 * [tqdm](https://pypi.python.org/pypi/tqdm)
+* [pickle](https://docs.python.org/3.1/library/pickle.html)
 * [wikipedia](https://pypi.python.org/pypi/wikipedia/)
 
 ## Languages supported
@@ -49,7 +50,7 @@ And, we need to download nltk files:
 
 Note that we must have installed Pip, Pip3, Python and Python3.
 
-## How to execute
+## Execution
 
 Previously, we need to have Europarl files in ./europarl_raw. The link is in top of train.py as comment.
 
