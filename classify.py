@@ -76,9 +76,9 @@ def classify(to_predict):
 def to_str(array):
     return [str(item) for item in array]
 
-def confusion_matrix(predicted, test):
+def confusion_matrix(predicted, test, num_languages):
     cm = nltk.ConfusionMatrix(predicted, test)
-    print(cm.pretty_format(sort_by_count=True, show_percents=True, truncate=11))
+    print(cm.pretty_format(sort_by_count=True, show_percents=True, truncate=num_languages))
 
 if __name__ == "__main__":
 
@@ -99,4 +99,4 @@ if __name__ == "__main__":
 
     predicted_str = to_str(predicted)
 
-    confusion_matrix(predicted_str, test)
+    confusion_matrix(predicted_str, test, len(languages_for_classify))
