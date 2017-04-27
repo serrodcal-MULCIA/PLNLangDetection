@@ -2,7 +2,7 @@
 
 Second work proposed for the subject of Natural Language Processing that consists of making a system that detects the languages of the text given.
 
-[Wiki in spanish](https://github.com/MULCIA/PLNLangDetection/wiki)
+[Wiki in spanish](https://github.com/MULCIA/PLNLangDetection/wiki) and [Video](https://youtu.be/ZA8BFKW_nTo).
 
 ## Requirements
 
