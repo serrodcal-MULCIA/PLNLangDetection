@@ -1,4 +1,4 @@
-# $ python3 classify.py model.pickle "This is an example."
+# $ python3 _classify.py model.pickle "This is an example."
 
 import re
 import argparse
